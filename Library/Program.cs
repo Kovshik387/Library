@@ -20,6 +20,15 @@ namespace Library
             var service = serviceProvider.GetService<IDictionaryService>();
             service.Rebuild();
             
+            Ui();
         }
+
+        private static void Ui()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Построение словарей завершено успешно!");
+            Console.ReadKey();
+        } 
     }
+    
 }
